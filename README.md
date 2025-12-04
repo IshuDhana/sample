@@ -45,6 +45,75 @@ This project focuses on **Interactive Chatbot creation for Exam preparation** us
 
 ---
 
+<!-- Badges (images linked) -->
+<h3>🧩 Core Dependencies & Libraries</h3>
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" />
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.123.0-teal?logo=fastapi&logoColor=white" />
+  <img alt="LangChain" src="https://img.shields.io/badge/LangChain-1.x-orange?logo=chainlink&logoColor=white" />
+  <img alt="Transformers" src="https://img.shields.io/badge/Transformers-4.57.3-yellow?logo=huggingface&logoColor=black" />
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.9.1-red?logo=pytorch&logoColor=white" />
+  <img alt="Pandas" src="https://img.shields.io/badge/pandas-2.3.3-green?logo=pandas&logoColor=white" />
+  <img alt="NumPy" src="https://img.shields.io/badge/numpy-2.3.5-blueviolet?logo=numpy&logoColor=white" />
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-1.7.2-orange?logo=scikitlearn&logoColor=white" />
+  <img alt="Pinecone" src="https://img.shields.io/badge/Pinecone-8.0.0-indigo?logo=pinecone&logoColor=white" />
+  <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-2.8.1-black?logo=openai&logoColor=white" />
+  <img alt="HuggingFace Hub" src="https://img.shields.io/badge/HF Hub-0.36.0-yellow?logo=huggingface&logoColor=black" />
+  <img alt="Gradio" src="https://img.shields.io/badge/Gradio-6.0.1-blue?logo=gradio&logoColor=white" />
+</p>
+
+<ul>
+  <li>Python 3.10 or higher</li>
+  <li>FastAPI == 0.123.0</li>
+  <li>LangChain (multiple modules): langchain, community, openai</li>
+  <li>Transformers == 4.57.3</li>
+  <li>PyTorch == 2.9.1</li>
+  <li>Pandas == 2.3.3</li>
+  <li>NumPy == 2.3.5</li>
+  <li>scikit-learn == 1.7.2</li>
+  <li>Pinecone Client == 6.0.0</li>
+  <li>OpenAI SDK == 2.8.1</li>
+  <li>HuggingFace Hub == 0.36.0</li>
+  <li>Gradio == 6.0.1</li>
+</ul>
+
+<br />
+
+<h3>📦 Full Requirements (from requirements.txt)</h3>
+
+<p>Your project includes many supporting packages for ML, async APIs, vector DBs, model loading, dataset processing, and web serving.  
+Full list is included below:</p>
+
+<details>
+<summary><strong>📜 Click to expand full dependency list</strong></summary>
+
+<pre>
+aiofiles==24.1.0
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.2
+aiosignal==1.4.0
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.12.0
+appdirs==1.4.4
+... (all other dependencies from your requirements.txt)
+</pre>
+
+</details>
+
+<br />
+
+<h3>🧩 Project Requirements</h3>
+<ul>
+  <li>Python environment with all dependencies installed</li>
+  <li>Your application source code</li>
+  <li>API keys (if required — OpenAI, Pinecone, HF Hub, etc.)</li>
+</ul>
+
+
+---
+
 # 📚 Chatbot Project Documentation
 
 This documentation provides a detailed overview of the chatbot project designed for CompTIA Security+ SY0-701 exam preparation. The system leverages YouTube video transcripts and PDF documents, processes and indexes them using Pinecone, and enables interactive querying via a Retrieval-Augmented Generation (RAG) chatbot interface. The project also includes evaluation scripts to measure chatbot accuracy and relevance. 
@@ -283,16 +352,12 @@ The project combines modern data ingestion, processing, and retrieval with advan
 
 ---
 
----
 
 ## 👨‍💻 Usage Notes
 
 - **Before running**, ensure all API keys are set in your environment.
 - **To add new data**, update the YouTube IDs or add PDFs to the `files` directory and rerun preprocessing and upserting steps.
 - **Evaluation** can be customized by editing the test questions and ground truths in `evaluation.py`.
-
----
-
 
 
 ---
